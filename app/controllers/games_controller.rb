@@ -1,7 +1,7 @@
 class GamesController < ApplicationController
   # Add your GamesController code here
   def create
-    game = Game.create(params.permit(:status))
+    game = Game.create(params[:state]:)
     render json: game
   end
 
@@ -10,7 +10,7 @@ class GamesController < ApplicationController
   end
 
   def show
-
+    game = Game.find(params[:id])
   end
 
 end
