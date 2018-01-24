@@ -5,4 +5,12 @@ class GamesController < ApplicationController
     render json.game
   end
 
+  def update
+
+  end
+
+  def show
+
+  end
+
 end
