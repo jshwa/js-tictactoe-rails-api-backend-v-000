@@ -1,7 +1,7 @@
 class GamesController < ApplicationController
   # Add your GamesController code here
   def create
-    game = Game.new()
+    game = Game.create()
     render json: game
   end
 
